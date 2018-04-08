@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90423DE20790D3D002C1500 /* TimeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90423DD20790D3D002C1500 /* TimeSelectorView.swift */; };
+		E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06B42063042900AA0C51 /* AppDelegate.swift */; };
+		E92D06B72063042900AA0C51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06B62063042900AA0C51 /* ViewController.swift */; };
+		E92D06BA2063042900AA0C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92D06B82063042900AA0C51 /* Main.storyboard */; };
+		E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E92D06BB2063042900AA0C51 /* GottaGo.xcdatamodeld */; };
+		E92D06BF2063042900AA0C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92D06BE2063042900AA0C51 /* Assets.xcassets */; };
+		E92D06C22063042900AA0C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */; };
+		E92D06CD2063042900AA0C51 /* GottaGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06CC2063042900AA0C51 /* GottaGoTests.swift */; };
+		E92D06D82063042900AA0C51 /* GottaGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06D72063042900AA0C51 /* GottaGoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E92D06C92063042900AA0C51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92D06A92063042900AA0C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E92D06B02063042900AA0C51;
+			remoteInfo = GottaGo;
+		};
+		E92D06D42063042900AA0C51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92D06A92063042900AA0C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E92D06B02063042900AA0C51;
+			remoteInfo = GottaGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E90423DD20790D3D002C1500 /* TimeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectorView.swift; sourceTree = "<group>"; };
+		E92D06B12063042900AA0C51 /* GottaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GottaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92D06B42063042900AA0C51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E92D06B62063042900AA0C51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E92D06B92063042900AA0C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E92D06BC2063042900AA0C51 /* GottaGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GottaGo.xcdatamodel; sourceTree = "<group>"; };
+		E92D06BE2063042900AA0C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E92D06C12063042900AA0C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E92D06C32063042900AA0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92D06C82063042900AA0C51 /* GottaGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GottaGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92D06CC2063042900AA0C51 /* GottaGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottaGoTests.swift; sourceTree = "<group>"; };
+		E92D06CE2063042900AA0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92D06D32063042900AA0C51 /* GottaGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GottaGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92D06D72063042900AA0C51 /* GottaGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottaGoUITests.swift; sourceTree = "<group>"; };
+		E92D06D92063042A00AA0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E92D06AE2063042900AA0C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92D06C52063042900AA0C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92D06D02063042900AA0C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E92D06A82063042900AA0C51 = {
+			isa = PBXGroup;
+			children = (
+				E92D06B32063042900AA0C51 /* GottaGo */,
+				E92D06CB2063042900AA0C51 /* GottaGoTests */,
+				E92D06D62063042900AA0C51 /* GottaGoUITests */,
+				E92D06B22063042900AA0C51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E92D06B22063042900AA0C51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92D06B12063042900AA0C51 /* GottaGo.app */,
+				E92D06C82063042900AA0C51 /* GottaGoTests.xctest */,
+				E92D06D32063042900AA0C51 /* GottaGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E92D06B32063042900AA0C51 /* GottaGo */ = {
+			isa = PBXGroup;
+			children = (
+				E92D06B42063042900AA0C51 /* AppDelegate.swift */,
+				E92D06B62063042900AA0C51 /* ViewController.swift */,
+				E92D06B82063042900AA0C51 /* Main.storyboard */,
+				E90423DD20790D3D002C1500 /* TimeSelectorView.swift */,
+				E92D06BE2063042900AA0C51 /* Assets.xcassets */,
+				E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */,
+				E92D06C32063042900AA0C51 /* Info.plist */,
+				E92D06BB2063042900AA0C51 /* GottaGo.xcdatamodeld */,
+			);
+			path = GottaGo;
+			sourceTree = "<group>";
+		};
+		E92D06CB2063042900AA0C51 /* GottaGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E92D06CC2063042900AA0C51 /* GottaGoTests.swift */,
+				E92D06CE2063042900AA0C51 /* Info.plist */,
+			);
+			path = GottaGoTests;
+			sourceTree = "<group>";
+		};
+		E92D06D62063042900AA0C51 /* GottaGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E92D06D72063042900AA0C51 /* GottaGoUITests.swift */,
+				E92D06D92063042A00AA0C51 /* Info.plist */,
+			);
+			path = GottaGoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E92D06B02063042900AA0C51 /* GottaGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92D06DC2063042A00AA0C51 /* Build configuration list for PBXNativeTarget "GottaGo" */;
+			buildPhases = (
+				E92D06AD2063042900AA0C51 /* Sources */,
+				E92D06AE2063042900AA0C51 /* Frameworks */,
+				E92D06AF2063042900AA0C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GottaGo;
+			productName = GottaGo;
+			productReference = E92D06B12063042900AA0C51 /* GottaGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E92D06C72063042900AA0C51 /* GottaGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92D06DF2063042A00AA0C51 /* Build configuration list for PBXNativeTarget "GottaGoTests" */;
+			buildPhases = (
+				E92D06C42063042900AA0C51 /* Sources */,
+				E92D06C52063042900AA0C51 /* Frameworks */,
+				E92D06C62063042900AA0C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E92D06CA2063042900AA0C51 /* PBXTargetDependency */,
+			);
+			name = GottaGoTests;
+			productName = GottaGoTests;
+			productReference = E92D06C82063042900AA0C51 /* GottaGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E92D06D22063042900AA0C51 /* GottaGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92D06E22063042A00AA0C51 /* Build configuration list for PBXNativeTarget "GottaGoUITests" */;
+			buildPhases = (
+				E92D06CF2063042900AA0C51 /* Sources */,
+				E92D06D02063042900AA0C51 /* Frameworks */,
+				E92D06D12063042900AA0C51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E92D06D52063042900AA0C51 /* PBXTargetDependency */,
+			);
+			name = GottaGoUITests;
+			productName = GottaGoUITests;
+			productReference = E92D06D32063042900AA0C51 /* GottaGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E92D06A92063042900AA0C51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Dhruv Mathur (LCL)";
+				TargetAttributes = {
+					E92D06B02063042900AA0C51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E92D06C72063042900AA0C51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E92D06B02063042900AA0C51;
+					};
+					E92D06D22063042900AA0C51 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E92D06B02063042900AA0C51;
+					};
+				};
+			};
+			buildConfigurationList = E92D06AC2063042900AA0C51 /* Build configuration list for PBXProject "GottaGo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E92D06A82063042900AA0C51;
+			productRefGroup = E92D06B22063042900AA0C51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E92D06B02063042900AA0C51 /* GottaGo */,
+				E92D06C72063042900AA0C51 /* GottaGoTests */,
+				E92D06D22063042900AA0C51 /* GottaGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E92D06AF2063042900AA0C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92D06C22063042900AA0C51 /* LaunchScreen.storyboard in Resources */,
+				E92D06BF2063042900AA0C51 /* Assets.xcassets in Resources */,
+				E92D06BA2063042900AA0C51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92D06C62063042900AA0C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92D06D12063042900AA0C51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E92D06AD2063042900AA0C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90423DE20790D3D002C1500 /* TimeSelectorView.swift in Sources */,
+				E92D06B72063042900AA0C51 /* ViewController.swift in Sources */,
+				E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */,
+				E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92D06C42063042900AA0C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92D06CD2063042900AA0C51 /* GottaGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92D06CF2063042900AA0C51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92D06D82063042900AA0C51 /* GottaGoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E92D06CA2063042900AA0C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E92D06B02063042900AA0C51 /* GottaGo */;
+			targetProxy = E92D06C92063042900AA0C51 /* PBXContainerItemProxy */;
+		};
+		E92D06D52063042900AA0C51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E92D06B02063042900AA0C51 /* GottaGo */;
+			targetProxy = E92D06D42063042900AA0C51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E92D06B82063042900AA0C51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92D06B92063042900AA0C51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92D06C12063042900AA0C51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E92D06DA2063042A00AA0C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E92D06DB2063042A00AA0C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E92D06DD2063042A00AA0C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GottaGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E92D06DE2063042A00AA0C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GottaGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E92D06E02063042A00AA0C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GottaGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GottaGo.app/GottaGo";
+			};
+			name = Debug;
+		};
+		E92D06E12063042A00AA0C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GottaGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GottaGo.app/GottaGo";
+			};
+			name = Release;
+		};
+		E92D06E32063042A00AA0C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GottaGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GottaGo;
+			};
+			name = Debug;
+		};
+		E92D06E42063042A00AA0C51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GottaGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GottaGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E92D06AC2063042900AA0C51 /* Build configuration list for PBXProject "GottaGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92D06DA2063042A00AA0C51 /* Debug */,
+				E92D06DB2063042A00AA0C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92D06DC2063042A00AA0C51 /* Build configuration list for PBXNativeTarget "GottaGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92D06DD2063042A00AA0C51 /* Debug */,
+				E92D06DE2063042A00AA0C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92D06DF2063042A00AA0C51 /* Build configuration list for PBXNativeTarget "GottaGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92D06E02063042A00AA0C51 /* Debug */,
+				E92D06E12063042A00AA0C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92D06E22063042A00AA0C51 /* Build configuration list for PBXNativeTarget "GottaGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92D06E32063042A00AA0C51 /* Debug */,
+				E92D06E42063042A00AA0C51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E92D06BB2063042900AA0C51 /* GottaGo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E92D06BC2063042900AA0C51 /* GottaGo.xcdatamodel */,
+			);
+			currentVersion = E92D06BC2063042900AA0C51 /* GottaGo.xcdatamodel */;
+			path = GottaGo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E92D06A92063042900AA0C51 /* Project object */;
+}

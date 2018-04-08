@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oEl-5r-nkT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XVo-1Y-wLb">
+            <objects>
+                <viewController id="KAI-pn-Pti" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6g-mJ-ZZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ra-K4-wRj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Settings" id="R0c-Hc-uBT">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="XNN-ow-TgS">
+                                            <connections>
+                                                <segue destination="oEl-5r-nkT" kind="presentation" id="VVW-eh-bWt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="PHl-pM-6ig"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ao1-as-7k7">
+                                <rect key="frame" x="39" y="72" width="297" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Work Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sp2-B6-bqO">
+                                <rect key="frame" x="39" y="136" width="297" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="BLL-7m-sJw">
+                                <rect key="frame" x="27" y="203" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="543413198.04915798">
+                                    <!--2018-03-22 12:06:38 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-3b-CCm">
+                                <rect key="frame" x="27" y="457" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="543413198.04915798">
+                                    <!--2018-03-22 12:06:38 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Normal time to leave Home?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwG-zh-h5t">
+                                <rect key="frame" x="78" y="174" width="216" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Normal time to leave Work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxn-Hf-NHJ">
+                                <rect key="frame" x="82" y="436" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ao1-as-7k7" firstAttribute="leading" secondItem="hmN-Hz-Nwd" secondAttribute="leading" constant="28" id="11J-G1-0fQ"/>
+                            <constraint firstItem="LMA-3b-CCm" firstAttribute="leading" secondItem="hmN-Hz-Nwd" secondAttribute="leading" constant="27.5" id="22Z-Lu-pmh"/>
+                            <constraint firstItem="Ao1-as-7k7" firstAttribute="top" secondItem="9ra-K4-wRj" secondAttribute="bottom" constant="79" id="3U6-8q-Gz8"/>
+                            <constraint firstItem="BLL-7m-sJw" firstAttribute="leading" secondItem="hmN-Hz-Nwd" secondAttribute="leading" constant="27.5" id="50o-em-2nj"/>
+                            <constraint firstItem="hmN-Hz-Nwd" firstAttribute="trailing" secondItem="hxn-Hf-NHJ" secondAttribute="trailing" constant="82.5" id="6Zy-DD-4v0"/>
+                            <constraint firstItem="hmN-Hz-Nwd" firstAttribute="trailing" secondItem="LMA-3b-CCm" secondAttribute="trailing" constant="27.5" id="9Re-4W-Kd6"/>
+                            <constraint firstItem="Sp2-B6-bqO" firstAttribute="centerX" secondItem="j6g-mJ-ZZQ" secondAttribute="centerX" id="AHR-uf-72o"/>
+                            <constraint firstItem="BLL-7m-sJw" firstAttribute="centerX" secondItem="j6g-mJ-ZZQ" secondAttribute="centerX" id="D1i-tv-dyz"/>
+                            <constraint firstItem="hxn-Hf-NHJ" firstAttribute="leading" secondItem="hmN-Hz-Nwd" secondAttribute="leading" constant="82.5" id="J6p-hx-eY5"/>
+                            <constraint firstItem="hwG-zh-h5t" firstAttribute="top" secondItem="Sp2-B6-bqO" secondAttribute="bottom" constant="42" id="LME-Rw-VRH"/>
+                            <constraint firstItem="hxn-Hf-NHJ" firstAttribute="top" secondItem="BLL-7m-sJw" secondAttribute="bottom" constant="17" id="M0p-fY-9Pz"/>
+                            <constraint firstItem="BLL-7m-sJw" firstAttribute="top" secondItem="hwG-zh-h5t" secondAttribute="bottom" constant="8" id="NTp-rd-ugI"/>
+                            <constraint firstItem="hmN-Hz-Nwd" firstAttribute="trailing" secondItem="BLL-7m-sJw" secondAttribute="trailing" constant="27.5" id="SdL-u8-6Sh"/>
+                            <constraint firstItem="hwG-zh-h5t" firstAttribute="centerX" secondItem="j6g-mJ-ZZQ" secondAttribute="centerX" id="TAO-oS-Xhg"/>
+                            <constraint firstItem="LMA-3b-CCm" firstAttribute="top" secondItem="hxn-Hf-NHJ" secondAttribute="bottom" id="TX3-g8-Gtc"/>
+                            <constraint firstItem="Sp2-B6-bqO" firstAttribute="top" secondItem="Ao1-as-7k7" secondAttribute="bottom" constant="34" id="UeE-cy-Bj0"/>
+                            <constraint firstItem="9ra-K4-wRj" firstAttribute="trailing" secondItem="hmN-Hz-Nwd" secondAttribute="trailing" id="Vn0-gm-vz2"/>
+                            <constraint firstItem="hwG-zh-h5t" firstAttribute="leading" secondItem="hmN-Hz-Nwd" secondAttribute="leading" constant="79" id="bgJ-p1-fkI"/>
+                            <constraint firstItem="hxn-Hf-NHJ" firstAttribute="centerX" secondItem="j6g-mJ-ZZQ" secondAttribute="centerX" id="cwF-kr-MHI"/>
+                            <constraint firstItem="Ao1-as-7k7" firstAttribute="centerX" secondItem="j6g-mJ-ZZQ" secondAttribute="centerX" id="d0L-wP-v0A"/>
+                            <constraint firstItem="LMA-3b-CCm" firstAttribute="centerX" secondItem="j6g-mJ-ZZQ" secondAttribute="centerX" id="gKh-Sy-wFK"/>
+                            <constraint firstItem="9ra-K4-wRj" firstAttribute="leading" secondItem="hmN-Hz-Nwd" secondAttribute="leading" id="hmd-d0-RrF"/>
+                            <constraint firstItem="hmN-Hz-Nwd" firstAttribute="trailing" secondItem="hwG-zh-h5t" secondAttribute="trailing" constant="80" id="ouY-p4-OXs"/>
+                            <constraint firstItem="Sp2-B6-bqO" firstAttribute="leading" secondItem="hmN-Hz-Nwd" secondAttribute="leading" constant="28" id="rdo-Fs-lX4"/>
+                            <constraint firstItem="hmN-Hz-Nwd" firstAttribute="trailing" secondItem="Sp2-B6-bqO" secondAttribute="trailing" constant="50" id="sD1-cW-0zt"/>
+                            <constraint firstItem="9ra-K4-wRj" firstAttribute="top" secondItem="j6g-mJ-ZZQ" secondAttribute="top" id="z1z-S7-EUd"/>
+                            <constraint firstItem="hmN-Hz-Nwd" firstAttribute="trailing" secondItem="Ao1-as-7k7" secondAttribute="trailing" constant="50" id="zGj-SD-vFD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hmN-Hz-Nwd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5J-9N-mTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="540.17991004497753"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LCD-XB-8Dj">
+            <objects>
+                <viewController id="oEl-5r-nkT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ca-W3-xND">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3fz-KA-BuE">
+                                <rect key="frame" x="27" y="145" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="543360239.22753096">
+                                    <!--2018-03-21 21:23:59 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="leaveTimePicker:" destination="7QW-nF-asc" eventType="valueChanged" id="WOJ-Rc-GEE"/>
+                                </connections>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="umG-be-Prb">
+                                <rect key="frame" x="27" y="409" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="543360251.87226605">
+                                    <!--2018-03-21 21:24:11 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="arriveTimePicker:" destination="7QW-nF-asc" eventType="valueChanged" id="Uiw-Vb-qqZ"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What time do you want to leave work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moM-rv-hpl">
+                                <rect key="frame" x="42.5" y="116" width="290" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkk-OA-MV7">
+                                <rect key="frame" x="155" y="617" width="63" height="30"/>
+                                <state key="normal" title="GottaGo!"/>
+                                <connections>
+                                    <action selector="gottaGoButton:" destination="7QW-nF-asc" eventType="touchUpInside" id="7Os-lR-z0f"/>
+                                    <segue destination="20c-2d-D5s" kind="presentation" id="My1-Z2-2RV"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avj-9i-uXh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="fTk-EC-bof">
+                                        <barButtonItem key="rightBarButtonItem" title="Settings" id="A01-n6-jJb">
+                                            <connections>
+                                                <segue destination="KAI-pn-Pti" kind="popoverPresentation" popoverAnchorBarButtonItem="A01-n6-jJb" id="M8A-LT-1t3">
+                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                </segue>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What time do you want to reach home?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGo-9S-wcY">
+                                <rect key="frame" x="37" y="380" width="299" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H56-RN-cQ8">
+                                <rect key="frame" x="231" y="59" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Going to Work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdV-i1-UWQ">
+                                <rect key="frame" x="89" y="64" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="H56-RN-cQ8" secondAttribute="trailing" constant="95" id="0PZ-ar-sfE"/>
+                            <constraint firstItem="H56-RN-cQ8" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" constant="15" id="1Iy-dY-d5n"/>
+                            <constraint firstItem="Avj-9i-uXh" firstAttribute="top" secondItem="3ca-W3-xND" secondAttribute="top" id="2Ic-Im-jRW"/>
+                            <constraint firstItem="moM-rv-hpl" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" constant="31" id="3ML-jZ-XB2"/>
+                            <constraint firstItem="PGo-9S-wcY" firstAttribute="top" secondItem="3fz-KA-BuE" secondAttribute="bottom" constant="19" id="5yI-jJ-scj"/>
+                            <constraint firstItem="H56-RN-cQ8" firstAttribute="leading" secondItem="cdV-i1-UWQ" secondAttribute="trailing" constant="24" id="EEe-Hr-KQF"/>
+                            <constraint firstItem="umG-be-Prb" firstAttribute="top" secondItem="PGo-9S-wcY" secondAttribute="bottom" constant="8" id="EIX-H1-mMq"/>
+                            <constraint firstItem="cdV-i1-UWQ" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="89" id="HgR-5t-1kB"/>
+                            <constraint firstItem="cdV-i1-UWQ" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" constant="20" id="M3l-uD-eIo"/>
+                            <constraint firstItem="moM-rv-hpl" firstAttribute="top" secondItem="H56-RN-cQ8" secondAttribute="bottom" constant="26" id="Nmq-jp-II9"/>
+                            <constraint firstItem="umG-be-Prb" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="O3s-pf-8zB"/>
+                            <constraint firstItem="3fz-KA-BuE" firstAttribute="top" secondItem="moM-rv-hpl" secondAttribute="bottom" constant="8" id="UcU-7d-C20"/>
+                            <constraint firstItem="Avj-9i-uXh" firstAttribute="trailing" secondItem="jbg-Lv-bAV" secondAttribute="trailing" id="WdZ-qe-vpN"/>
+                            <constraint firstItem="Avj-9i-uXh" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" id="dT5-0m-HX8"/>
+                            <constraint firstItem="PGo-9S-wcY" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="h6z-wf-asM"/>
+                            <constraint firstItem="vkk-OA-MV7" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="mZB-gd-Aij"/>
+                            <constraint firstItem="3fz-KA-BuE" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="njP-sB-QIf"/>
+                            <constraint firstItem="vkk-OA-MV7" firstAttribute="top" secondItem="PGo-9S-wcY" secondAttribute="bottom" constant="216" id="ol5-ZM-9AB"/>
+                            <constraint firstItem="moM-rv-hpl" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="wlC-Ai-hcJ"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="bottom" secondItem="vkk-OA-MV7" secondAttribute="bottom" constant="12" id="xvj-9e-sSb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jbg-Lv-bAV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="HaL-of-7L2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hH-O0-T2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7QW-nF-asc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="-170.46476761619192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j9m-mR-SuC">
+            <objects>
+                <viewController id="20c-2d-D5s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gOq-pD-c92">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VB3-QC-Uog">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Your Trip:" id="H4G-Hf-Xa1">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="apX-Dp-mYO">
+                                            <connections>
+                                                <segue destination="oEl-5r-nkT" kind="presentation" id="kwK-uT-ZDK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="nqw-Lb-RmR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EhN-Jv-BA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="208"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kwK-uT-ZDK"/>
+    </inferredMetricsTieBreakers>
+</document>
