@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func leaveTimePicker(_ sender: UIDatePicker) {
-        
+    
+    @IBOutlet weak var leaveTimePickerOutlet: UIDatePicker!
+    
+    @IBAction func leaveTimePickerAction(_ sender: Any) {
+        print(self.leaveTimePickerOutlet.date.timeIntervalSince1970)
     }
+    
+    @IBAction func workHomeToggle(_ sender: Any) {
+    }
+    
     @IBAction func arriveTimePicker(_ sender: UIDatePicker) {
         
     }

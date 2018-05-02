@@ -16,6 +16,9 @@
 		E92D06C22063042900AA0C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */; };
 		E92D06CD2063042900AA0C51 /* GottaGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06CC2063042900AA0C51 /* GottaGoTests.swift */; };
 		E92D06D82063042900AA0C51 /* GottaGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06D72063042900AA0C51 /* GottaGoUITests.swift */; };
+		FC2E58C92099FCC500B12852 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E58C82099FCC500B12852 /* ResultScreen.swift */; };
+		FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C602099FFB9001ABB28 /* UserInfo.swift */; };
+		FCE41C63209A2432001ABB28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C62209A2432001ABB28 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		E92D06D32063042900AA0C51 /* GottaGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GottaGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92D06D72063042900AA0C51 /* GottaGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottaGoUITests.swift; sourceTree = "<group>"; };
 		E92D06D92063042A00AA0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2E58C82099FCC500B12852 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		FCE41C602099FFB9001ABB28 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		FCE41C62209A2432001ABB28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				E92D06B62063042900AA0C51 /* ViewController.swift */,
 				E92D06B82063042900AA0C51 /* Main.storyboard */,
 				E90423DD20790D3D002C1500 /* TimeSelectorView.swift */,
+				FC2E58C82099FCC500B12852 /* ResultScreen.swift */,
+				FCE41C602099FFB9001ABB28 /* UserInfo.swift */,
+				FCE41C62209A2432001ABB28 /* API.swift */,
 				E92D06BE2063042900AA0C51 /* Assets.xcassets */,
 				E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */,
 				E92D06C32063042900AA0C51 /* Info.plist */,
@@ -266,9 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90423DE20790D3D002C1500 /* TimeSelectorView.swift in Sources */,
+				FC2E58C92099FCC500B12852 /* ResultScreen.swift in Sources */,
 				E92D06B72063042900AA0C51 /* ViewController.swift in Sources */,
 				E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */,
+				FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */,
 				E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */,
+				FCE41C63209A2432001ABB28 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
