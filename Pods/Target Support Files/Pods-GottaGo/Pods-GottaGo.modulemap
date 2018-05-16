@@ -1,0 +1,6 @@
+framework module Pods_GottaGo {
+  umbrella header "Pods-GottaGo-umbrella.h"
+
+  export *
+  module * { export * }
+}

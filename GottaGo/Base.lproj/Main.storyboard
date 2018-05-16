@@ -172,6 +172,7 @@
                                 <state key="normal" title="GottaGo!"/>
                                 <connections>
                                     <action selector="gottaGoButton:" destination="7QW-nF-asc" eventType="touchUpInside" id="7Os-lR-z0f"/>
+                                    <action selector="gottaGoButton:" destination="oEl-5r-nkT" eventType="touchUpInside" id="JCq-in-EE2"/>
                                     <segue destination="20c-2d-D5s" kind="presentation" id="My1-Z2-2RV"/>
                                 </connections>
                             </button>
@@ -196,6 +197,7 @@
                                 </date>
                                 <connections>
                                     <action selector="arriveTimePicker:" destination="7QW-nF-asc" eventType="valueChanged" id="Uiw-Vb-qqZ"/>
+                                    <action selector="arriveTimePicker:" destination="oEl-5r-nkT" eventType="valueChanged" id="chV-uq-Fda"/>
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Latest you can arrive to work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGo-9S-wcY">

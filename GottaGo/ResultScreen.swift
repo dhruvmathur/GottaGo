@@ -6,4 +6,12 @@
 //  Copyright © 2018 Dhruv Mathur (LCL). All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ResultScreen: UIViewController {
+
+    
+    
+}
+
+

@@ -11,7 +11,7 @@ import Foundation
 struct propertyKey {
     static var savedHomeAddress: String = ""
     static var savedWorkAddress: String = ""
-    static var timeToLeaveWork: Date? = nil
-    static var timeToLeaveHome: Date? = nil
+    static var timeToGetToWork: Int = 0
+    static var timeToLeaveHome: Int = 0
 }
 

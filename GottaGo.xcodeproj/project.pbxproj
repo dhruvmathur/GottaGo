@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92D4D228E18FDBD0E78AEED1 /* Pods_GottaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490171E782B977066A259495 /* Pods_GottaGo.framework */; };
 		E90423DE20790D3D002C1500 /* TimeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90423DD20790D3D002C1500 /* TimeSelectorView.swift */; };
 		E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06B42063042900AA0C51 /* AppDelegate.swift */; };
 		E92D06B72063042900AA0C51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06B62063042900AA0C51 /* ViewController.swift */; };
@@ -39,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B0E0FAFA309D6553AEBD473 /* Pods-GottaGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GottaGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GottaGo/Pods-GottaGo.debug.xcconfig"; sourceTree = "<group>"; };
+		34EEF8F6D4939491B08DEDF8 /* Pods-GottaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GottaGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GottaGo/Pods-GottaGo.release.xcconfig"; sourceTree = "<group>"; };
+		4524A245AC0BB61E19E85C7B /* Pods_GottaGoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GottaGoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490171E782B977066A259495 /* Pods_GottaGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GottaGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCF3B048A2396627472FB3D /* Pods_GottaGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GottaGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90423DD20790D3D002C1500 /* TimeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectorView.swift; sourceTree = "<group>"; };
 		E92D06B12063042900AA0C51 /* GottaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GottaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92D06B42063042900AA0C51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D4D228E18FDBD0E78AEED1 /* Pods_GottaGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +91,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C14D05522F80576542E8395 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B0E0FAFA309D6553AEBD473 /* Pods-GottaGo.debug.xcconfig */,
+				34EEF8F6D4939491B08DEDF8 /* Pods-GottaGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76993FE2A7BAD30A21A44AB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				490171E782B977066A259495 /* Pods_GottaGo.framework */,
+				5CCF3B048A2396627472FB3D /* Pods_GottaGoTests.framework */,
+				4524A245AC0BB61E19E85C7B /* Pods_GottaGoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E92D06A82063042900AA0C51 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +117,8 @@
 				E92D06CB2063042900AA0C51 /* GottaGoTests */,
 				E92D06D62063042900AA0C51 /* GottaGoUITests */,
 				E92D06B22063042900AA0C51 /* Products */,
+				1C14D05522F80576542E8395 /* Pods */,
+				76993FE2A7BAD30A21A44AB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E92D06DC2063042A00AA0C51 /* Build configuration list for PBXNativeTarget "GottaGo" */;
 			buildPhases = (
+				581FB078CF7C74A6404A580B /* [CP] Check Pods Manifest.lock */,
 				E92D06AD2063042900AA0C51 /* Sources */,
 				E92D06AE2063042900AA0C51 /* Frameworks */,
 				E92D06AF2063042900AA0C51 /* Resources */,
+				19B26F0509500DD11CFA0B92 /* [CP] Embed Pods Frameworks */,
+				A3EC59D669DCA945E2FBDC80 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +299,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B26F0509500DD11CFA0B92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GottaGo/Pods-GottaGo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GottaGo/Pods-GottaGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		581FB078CF7C74A6404A580B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GottaGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3EC59D669DCA945E2FBDC80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GottaGo/Pods-GottaGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E92D06AD2063042900AA0C51 /* Sources */ = {
@@ -444,6 +529,7 @@
 		};
 		E92D06DD2063042A00AA0C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0E0FAFA309D6553AEBD473 /* Pods-GottaGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +544,7 @@
 		};
 		E92D06DE2063042A00AA0C51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EEF8F6D4939491B08DEDF8 /* Pods-GottaGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -14,19 +14,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var leaveTimePickerOutlet: UIDatePicker!
     
     @IBAction func leaveTimePickerAction(_ sender: Any) {
-        print(self.leaveTimePickerOutlet.date.timeIntervalSince1970)
+        
     }
     
     @IBAction func workHomeToggle(_ sender: Any) {
     }
     
     @IBAction func arriveTimePicker(_ sender: UIDatePicker) {
-        
+        propertyKey.timeToGetToWork = Int(leaveTimePickerOutlet.date.timeIntervalSince1970)
+    }
+
+    @IBAction func gottaGoButton(_ sender: Any) {
+        let newAPI = API()
+        print(newAPI.makeURL())
     }
     
-    @IBAction func gottaGoButton(_ sender: Any) {
-        
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

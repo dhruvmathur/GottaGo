@@ -14,11 +14,12 @@ class TimeSelectorView: UIViewController {
     @IBOutlet weak var workAddressOutlet: UITextField!
     @IBOutlet weak var timeToLeaveWork: UIDatePicker!
     @IBOutlet weak var timeToLeaveHome: UIDatePicker!
+
     
     @IBAction func saveButtonPressed(_ sender: Any) {
         propertyKey.savedHomeAddress = self.homeAddressOutlet.text!
         propertyKey.savedWorkAddress = self.workAddressOutlet.text!
-        propertyKey.timeToLeaveWork = self.timeToLeaveWork.date
-        propertyKey.timeToLeaveHome = self.timeToLeaveHome.date
+        propertyKey.timeToGetToWork = Int(self.timeToLeaveWork.date.timeIntervalSince1970)
+        propertyKey.timeToLeaveHome = Int(self.timeToLeaveHome.date.timeIntervalSince1970)
     }
 }
