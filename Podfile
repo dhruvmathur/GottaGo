@@ -4,4 +4,7 @@ use_frameworks!
 
 target 'GottaGo' do
     pod 'Alamofire', '~> 4.7'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
+
 end

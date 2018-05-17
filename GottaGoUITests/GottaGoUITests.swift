@@ -29,6 +29,24 @@ class GottaGoUITests: XCTestCase {
     }
     
     func testExample() {
+        
+        let app = XCUIApplication()
+        let settingsNavigationBar = app.navigationBars["Settings"]
+        let saveButton = settingsNavigationBar.buttons["Save"]
+        settingsNavigationBar.buttons.firstMatch.tap()
+        saveButton.tap()
+        
+        let elementsQuery = app.scrollViews.otherElements
+        elementsQuery.textFields["Home Address"].tap()
+        elementsQuery.textFields["Home Address"].typeText("12 Hickory Ridge Court, Brampton")
+        
+        let workAddressTextField = elementsQuery.textFields["Work Address"]
+        workAddressTextField.tap()
+        workAddressTextField.typeText("12 Hickory Ridge Court, Brampton")
+        saveButton.tap()
+        settingsNavigationBar.buttons["Back"].tap()
+        app.buttons["GottaGo!"].tap()
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

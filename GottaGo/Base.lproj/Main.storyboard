@@ -259,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="-23.199999999999999" y="-170.46476761619192"/>
         </scene>
-        <!--View Controller-->
+        <!--Result Screen-->
         <scene sceneID="j9m-mR-SuC">
             <objects>
-                <viewController id="20c-2d-D5s" sceneMemberID="viewController">
+                <viewController id="20c-2d-D5s" customClass="ResultScreen" customModule="GottaGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOq-pD-c92">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,6 +291,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VVW-eh-bWt"/>
+        <segue reference="kwK-uT-ZDK"/>
     </inferredMetricsTieBreakers>
 </document>
