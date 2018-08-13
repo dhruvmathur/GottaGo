@@ -14,7 +14,6 @@
 		E92D06BA2063042900AA0C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92D06B82063042900AA0C51 /* Main.storyboard */; };
 		E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E92D06BB2063042900AA0C51 /* GottaGo.xcdatamodeld */; };
 		E92D06BF2063042900AA0C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92D06BE2063042900AA0C51 /* Assets.xcassets */; };
-		E92D06C22063042900AA0C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */; };
 		E92D06CD2063042900AA0C51 /* GottaGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06CC2063042900AA0C51 /* GottaGoTests.swift */; };
 		E92D06D82063042900AA0C51 /* GottaGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06D72063042900AA0C51 /* GottaGoUITests.swift */; };
 		FC2E58C92099FCC500B12852 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E58C82099FCC500B12852 /* ResultScreen.swift */; };
@@ -54,7 +53,6 @@
 		E92D06B92063042900AA0C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E92D06BC2063042900AA0C51 /* GottaGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GottaGo.xcdatamodel; sourceTree = "<group>"; };
 		E92D06BE2063042900AA0C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E92D06C12063042900AA0C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E92D06C32063042900AA0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E92D06C82063042900AA0C51 /* GottaGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GottaGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92D06CC2063042900AA0C51 /* GottaGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottaGoTests.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				FCE41C602099FFB9001ABB28 /* UserInfo.swift */,
 				FCE41C62209A2432001ABB28 /* API.swift */,
 				E92D06BE2063042900AA0C51 /* Assets.xcassets */,
-				E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */,
 				E92D06C32063042900AA0C51 /* Info.plist */,
 				E92D06BB2063042900AA0C51 /* GottaGo.xcdatamodeld */,
 			);
@@ -284,7 +281,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92D06C22063042900AA0C51 /* LaunchScreen.storyboard in Resources */,
 				E92D06BF2063042900AA0C51 /* Assets.xcassets in Resources */,
 				E92D06BA2063042900AA0C51 /* Main.storyboard in Resources */,
 			);
@@ -420,14 +416,6 @@
 				E92D06B92063042900AA0C51 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E92D06C02063042900AA0C51 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E92D06C12063042900AA0C51 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

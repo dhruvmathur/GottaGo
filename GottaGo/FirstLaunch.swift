@@ -18,7 +18,7 @@ final class FirstLaunch {
     }
     
     init() {
-        let key = "com.any-suggestion.FirstLaunch.WasLaunchedBefore"
+        let key = "com.dhruv.GottaGo"
         let wasLaunchedBefore = userDefaults.bool(forKey: key)
         self.wasLaunchedBefore = wasLaunchedBefore
         if !wasLaunchedBefore {

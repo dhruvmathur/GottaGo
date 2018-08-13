@@ -18,10 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyA7j7EOprxlOB35wALWVfzXbvyCg_TGIlo")
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        var vc : AnyObject!
+        
+
+        let firstLaunch = FirstLaunch()
+        if firstLaunch.isFirstLaunch {
+            vc = storyboard.instantiateViewController(withIdentifier: "PageController")
+        }else{
+            vc = storyboard.instantiateViewController(withIdentifier: "MainView")
+        }
+        self.window!.rootViewController = vc as? UIViewController
+        self.window!.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

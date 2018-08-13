@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aOG-iH-S44">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -147,7 +147,7 @@
         <!--First Start Up Page View-->
         <scene sceneID="fuJ-v7-Ioi">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="aOG-iH-S44" customClass="FirstStartUpPageView" customModule="GottaGo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="aOG-iH-S44" customClass="FirstStartUpPageView" customModule="GottaGo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muE-IO-Jl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2194" y="-140"/>
@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="-1858.4000000000001" y="553.67316341829087"/>
         </scene>
-        <!--View Controller-->
+        <!--MainView-->
         <scene sceneID="LCD-XB-8Dj">
             <objects>
-                <viewController id="oEl-5r-nkT" customClass="ViewController" customModule="GottaGo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" title="MainView" id="oEl-5r-nkT" customClass="ViewController" customModule="GottaGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ca-W3-xND">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,6 +356,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="My1-Z2-2RV"/>
         <segue reference="kwK-uT-ZDK"/>
     </inferredMetricsTieBreakers>
 </document>
