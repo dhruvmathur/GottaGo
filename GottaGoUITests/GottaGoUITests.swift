@@ -33,8 +33,9 @@ class GottaGoUITests: XCTestCase {
         let app = XCUIApplication()
         let settingsNavigationBar = app.navigationBars["Settings"]
         let saveButton = settingsNavigationBar.buttons["Save"]
-        settingsNavigationBar.buttons.firstMatch.tap()
-        saveButton.tap()
+        let settingsButton = app.buttons["Settings"]
+        settingsButton.tap()
+        //saveButton.tap()
         
         let elementsQuery = app.scrollViews.otherElements
         elementsQuery.textFields["Home Address"].tap()
@@ -42,7 +43,8 @@ class GottaGoUITests: XCTestCase {
         
         let workAddressTextField = elementsQuery.textFields["Work Address"]
         workAddressTextField.tap()
-        workAddressTextField.typeText("12 Hickory Ridge Court, Brampton")
+        workAddressTextField.typeText("UWP, Waterloo")
+        saveButton.tap()
         saveButton.tap()
         settingsNavigationBar.buttons["Back"].tap()
         app.buttons["GottaGo!"].tap()

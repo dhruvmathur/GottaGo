@@ -18,6 +18,8 @@
 		E92D06CD2063042900AA0C51 /* GottaGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06CC2063042900AA0C51 /* GottaGoTests.swift */; };
 		E92D06D82063042900AA0C51 /* GottaGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06D72063042900AA0C51 /* GottaGoUITests.swift */; };
 		FC2E58C92099FCC500B12852 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E58C82099FCC500B12852 /* ResultScreen.swift */; };
+		FCA88B7121211FA3003067A0 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B7021211FA3003067A0 /* FirstLaunch.swift */; };
+		FCA88B732121252D003067A0 /* FirstStartupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B722121252D003067A0 /* FirstStartupPageView.swift */; };
 		FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C602099FFB9001ABB28 /* UserInfo.swift */; };
 		FCE41C63209A2432001ABB28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C62209A2432001ABB28 /* API.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		E92D06D72063042900AA0C51 /* GottaGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottaGoUITests.swift; sourceTree = "<group>"; };
 		E92D06D92063042A00AA0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2E58C82099FCC500B12852 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		FCA88B7021211FA3003067A0 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
+		FCA88B722121252D003067A0 /* FirstStartupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStartupPageView.swift; sourceTree = "<group>"; };
 		FCE41C602099FFB9001ABB28 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FCE41C62209A2432001ABB28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,8 +141,10 @@
 			children = (
 				E92D06B42063042900AA0C51 /* AppDelegate.swift */,
 				E92D06B62063042900AA0C51 /* ViewController.swift */,
+				FCA88B7021211FA3003067A0 /* FirstLaunch.swift */,
 				E92D06B82063042900AA0C51 /* Main.storyboard */,
 				E90423DD20790D3D002C1500 /* TimeSelectorView.swift */,
+				FCA88B722121252D003067A0 /* FirstStartupPageView.swift */,
 				FC2E58C82099FCC500B12852 /* ResultScreen.swift */,
 				FCE41C602099FFB9001ABB28 /* UserInfo.swift */,
 				FCE41C62209A2432001ABB28 /* API.swift */,
@@ -370,7 +376,9 @@
 				E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */,
 				FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */,
 				E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */,
+				FCA88B732121252D003067A0 /* FirstStartupPageView.swift in Sources */,
 				FCE41C63209A2432001ABB28 /* API.swift in Sources */,
+				FCA88B7121211FA3003067A0 /* FirstLaunch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
