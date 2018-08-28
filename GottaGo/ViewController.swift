@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func arriveTimePicker(_ sender: UIDatePicker) {
+        
         propertyKey.timeToGetToWork = Int(leaveTimePickerOutlet.date.timeIntervalSince1970)
     }
 

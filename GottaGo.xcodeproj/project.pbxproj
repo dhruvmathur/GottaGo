@@ -19,6 +19,7 @@
 		FC2E58C92099FCC500B12852 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E58C82099FCC500B12852 /* ResultScreen.swift */; };
 		FCA88B7121211FA3003067A0 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B7021211FA3003067A0 /* FirstLaunch.swift */; };
 		FCA88B732121252D003067A0 /* FirstStartupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B722121252D003067A0 /* FirstStartupPageView.swift */; };
+		FCD68F712133B53C001916A5 /* IntroPageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */; };
 		FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C602099FFB9001ABB28 /* UserInfo.swift */; };
 		FCE41C63209A2432001ABB28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C62209A2432001ABB28 /* API.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		FC2E58C82099FCC500B12852 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		FCA88B7021211FA3003067A0 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
 		FCA88B722121252D003067A0 /* FirstStartupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStartupPageView.swift; sourceTree = "<group>"; };
+		FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageSettingsView.swift; sourceTree = "<group>"; };
 		FCE41C602099FFB9001ABB28 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FCE41C62209A2432001ABB28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 				E92D06B42063042900AA0C51 /* AppDelegate.swift */,
 				E92D06B62063042900AA0C51 /* ViewController.swift */,
 				FCA88B7021211FA3003067A0 /* FirstLaunch.swift */,
+				FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */,
 				E92D06B82063042900AA0C51 /* Main.storyboard */,
 				E90423DD20790D3D002C1500 /* TimeSelectorView.swift */,
 				FCA88B722121252D003067A0 /* FirstStartupPageView.swift */,
@@ -373,6 +376,7 @@
 				FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */,
 				E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */,
 				FCA88B732121252D003067A0 /* FirstStartupPageView.swift in Sources */,
+				FCD68F712133B53C001916A5 /* IntroPageSettingsView.swift in Sources */,
 				FCE41C63209A2432001ABB28 /* API.swift in Sources */,
 				FCA88B7121211FA3003067A0 /* FirstLaunch.swift in Sources */,
 			);
@@ -532,7 +536,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B0E0FAFA309D6553AEBD473 /* Pods-GottaGo.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-4";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GottaGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -547,7 +552,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34EEF8F6D4939491B08DEDF8 /* Pods-GottaGo.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-4";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GottaGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
