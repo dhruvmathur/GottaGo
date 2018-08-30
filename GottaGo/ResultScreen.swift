@@ -11,8 +11,16 @@ import GoogleMaps
 
 class ResultScreen: UIViewController{
 
+    @IBOutlet weak var departureLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var arrivalLabel: UILabel!
+    
+    @IBOutlet weak var durationTimeLabel: UILabel!
+    @IBOutlet weak var departureTimeLabel: UILabel!
+    @IBOutlet weak var arrivalTimeLabel: UILabel!
     
     @IBOutlet weak var mapView: GMSMapView!
+    
 //    override func loadView() {
 //        // Create a GMSCameraPosition that tells the map to display the
 //        // coordinate -33.86,151.20 at zoom level 6.
@@ -37,7 +45,18 @@ class ResultScreen: UIViewController{
         
         let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 48.857165, longitude: 2.354613, zoom: 8.0)
         mapView.camera = camera
-
+        
+        let departTime = propertyKey.userDefaults.string(forKey: "defaultDepartureTime")
+        let arriveTime = propertyKey.userDefaults.string(forKey: "defaultArrivalTime")
+        let duration = propertyKey.userDefaults.string(forKey: "defaultDuration")
+        
+        durationTimeLabel.text = duration
+        arrivalTimeLabel.text = arriveTime
+        departureTimeLabel.text = departTime
+        
+        durationTimeLabel.isHidden = false
+        arrivalTimeLabel.isHidden = false
+        departureTimeLabel.isHidden = false
     }
     
     override func didReceiveMemoryWarning() {

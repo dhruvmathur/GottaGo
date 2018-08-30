@@ -16,9 +16,6 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func workHomeToggle(_ sender: Any) {
-    }
-    
     @IBAction func arriveTimePicker(_ sender: UIDatePicker) {
         
         propertyKey.timeToGetToWork = Int(leaveTimePickerOutlet.date.timeIntervalSince1970)

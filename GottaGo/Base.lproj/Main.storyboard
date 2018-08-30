@@ -276,6 +276,7 @@
                     <connections>
                         <outlet property="homeAddressField" destination="hF0-YX-UUq" id="tqX-4g-L0U"/>
                         <outlet property="homeTimePicker" destination="ja0-9I-zk3" id="iS2-7B-Ukm"/>
+                        <outlet property="proceedButtonOutlet" destination="9E4-c7-DBL" id="E4o-aM-dY9"/>
                         <outlet property="workAddressField" destination="CRI-99-UMt" id="rSj-RP-5Uh"/>
                         <outlet property="workTimePicker" destination="VeY-1W-KH3" id="Kt4-Kl-zcp"/>
                     </connections>
@@ -292,7 +293,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3fz-KA-BuE">
-                                <rect key="frame" x="27" y="153" width="320" height="216"/>
+                                <rect key="frame" x="27" y="153" width="320" height="190"/>
                                 <date key="date" timeIntervalSinceReferenceDate="543360239.22753096">
                                     <!--2018-03-21 21:23:59 +0000-->
                                 </date>
@@ -300,14 +301,8 @@
                                     <action selector="leaveTimePickerAction:" destination="oEl-5r-nkT" eventType="valueChanged" id="ut3-hb-YUn"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earliest you can leave work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moM-rv-hpl">
-                                <rect key="frame" x="80" y="124" width="215" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkk-OA-MV7">
-                                <rect key="frame" x="155" y="617" width="63" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkk-OA-MV7">
+                                <rect key="frame" x="156" y="627" width="63" height="30"/>
                                 <state key="normal" title="GottaGo!"/>
                                 <connections>
                                     <action selector="gottaGoButton:" destination="7QW-nF-asc" eventType="touchUpInside" id="7Os-lR-z0f"/>
@@ -329,8 +324,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="umG-be-Prb">
-                                <rect key="frame" x="27" y="409" width="320" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="umG-be-Prb">
+                                <rect key="frame" x="27" y="391" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="543360251.87226605">
                                     <!--2018-03-21 21:24:11 +0000-->
                                 </date>
@@ -339,23 +334,20 @@
                                     <action selector="arriveTimePicker:" destination="oEl-5r-nkT" eventType="valueChanged" id="chV-uq-Fda"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Latest you can arrive to work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGo-9S-wcY">
-                                <rect key="frame" x="73" y="380" width="229" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earliest you want to be home?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGo-9S-wcY">
+                                <rect key="frame" x="73" y="362" width="229" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tek-RC-Ydg">
-                                <rect key="frame" x="163" y="62" width="51" height="31"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Going Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTR-5T-oi5">
-                                <rect key="frame" x="25" y="67" width="98" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can use the custom time selectors below to be temporarily notified for new timings:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkI-WK-nGy">
+                                <rect key="frame" x="8" y="44" width="359" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Going to Work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-E4-d5a">
-                                <rect key="frame" x="234" y="67" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest you can arrive to work?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moM-rv-hpl">
+                                <rect key="frame" x="67" y="124" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -364,27 +356,33 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Avj-9i-uXh" firstAttribute="top" secondItem="3ca-W3-xND" secondAttribute="top" id="2Ic-Im-jRW"/>
+                            <constraint firstItem="3fz-KA-BuE" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="27" id="3yh-uI-n0h"/>
                             <constraint firstItem="PGo-9S-wcY" firstAttribute="top" secondItem="3fz-KA-BuE" secondAttribute="bottom" constant="19" id="5yI-jJ-scj"/>
-                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="g8B-E4-d5a" secondAttribute="trailing" constant="16" id="BCz-9S-p6A"/>
+                            <constraint firstItem="PGo-9S-wcY" firstAttribute="top" secondItem="moM-rv-hpl" secondAttribute="bottom" constant="217" id="7ba-cp-iab"/>
+                            <constraint firstItem="moM-rv-hpl" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="67" id="8gl-0x-k8W"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="3fz-KA-BuE" secondAttribute="trailing" constant="28" id="DpN-NF-KDk"/>
                             <constraint firstItem="umG-be-Prb" firstAttribute="top" secondItem="PGo-9S-wcY" secondAttribute="bottom" constant="8" id="EIX-H1-mMq"/>
+                            <constraint firstItem="moM-rv-hpl" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" constant="80" id="Hl7-Dp-bZO"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="PGo-9S-wcY" secondAttribute="trailing" constant="73" id="IdT-fr-IHO"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="NkI-WK-nGy" secondAttribute="trailing" constant="8" id="LH3-sI-SRD"/>
+                            <constraint firstItem="moM-rv-hpl" firstAttribute="top" secondItem="NkI-WK-nGy" secondAttribute="bottom" constant="29" id="Mq8-3Q-Kwu"/>
                             <constraint firstItem="umG-be-Prb" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="O3s-pf-8zB"/>
-                            <constraint firstItem="tek-RC-Ydg" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" constant="18" id="URh-ju-Hnp"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="bottom" secondItem="vkk-OA-MV7" secondAttribute="bottom" constant="10" id="Om8-rr-Lcz"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="umG-be-Prb" secondAttribute="trailing" constant="28" id="Q0F-g9-ny3"/>
                             <constraint firstItem="3fz-KA-BuE" firstAttribute="top" secondItem="moM-rv-hpl" secondAttribute="bottom" constant="8" id="UcU-7d-C20"/>
                             <constraint firstItem="Avj-9i-uXh" firstAttribute="trailing" secondItem="jbg-Lv-bAV" secondAttribute="trailing" id="WdZ-qe-vpN"/>
-                            <constraint firstItem="XTR-5T-oi5" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" constant="23" id="YQa-ry-E4i"/>
-                            <constraint firstItem="moM-rv-hpl" firstAttribute="top" secondItem="tek-RC-Ydg" secondAttribute="bottom" constant="31" id="dJg-YM-BOO"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="vkk-OA-MV7" secondAttribute="trailing" constant="156" id="Yyo-jY-gTt"/>
+                            <constraint firstItem="NkI-WK-nGy" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="8" id="a3p-Nm-5gu"/>
+                            <constraint firstItem="vkk-OA-MV7" firstAttribute="top" secondItem="umG-be-Prb" secondAttribute="bottom" constant="20" id="bDw-mg-7GK"/>
+                            <constraint firstItem="vkk-OA-MV7" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="156" id="cW7-wp-B0l"/>
                             <constraint firstItem="Avj-9i-uXh" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" id="dT5-0m-HX8"/>
-                            <constraint firstItem="g8B-E4-d5a" firstAttribute="leading" secondItem="tek-RC-Ydg" secondAttribute="trailing" constant="39" id="fCu-La-DjI"/>
+                            <constraint firstItem="PGo-9S-wcY" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="73" id="fDq-c6-rwG"/>
                             <constraint firstItem="PGo-9S-wcY" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="h6z-wf-asM"/>
-                            <constraint firstItem="tek-RC-Ydg" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="huT-pN-x4n"/>
-                            <constraint firstItem="vkk-OA-MV7" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="mZB-gd-Aij"/>
-                            <constraint firstItem="XTR-5T-oi5" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="25" id="nO2-xU-KLv"/>
+                            <constraint firstItem="3fz-KA-BuE" firstAttribute="top" secondItem="moM-rv-hpl" secondAttribute="bottom" constant="8" id="nZ8-gq-nX1"/>
                             <constraint firstItem="3fz-KA-BuE" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="njP-sB-QIf"/>
-                            <constraint firstItem="vkk-OA-MV7" firstAttribute="top" secondItem="PGo-9S-wcY" secondAttribute="bottom" constant="216" id="ol5-ZM-9AB"/>
-                            <constraint firstItem="g8B-E4-d5a" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" constant="23" id="vSc-l3-Yc6"/>
-                            <constraint firstItem="moM-rv-hpl" firstAttribute="centerX" secondItem="3ca-W3-xND" secondAttribute="centerX" id="wlC-Ai-hcJ"/>
-                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="bottom" secondItem="vkk-OA-MV7" secondAttribute="bottom" constant="12" id="xvj-9e-sSb"/>
-                            <constraint firstItem="tek-RC-Ydg" firstAttribute="leading" secondItem="XTR-5T-oi5" secondAttribute="trailing" constant="40" id="y4S-2n-Kl8"/>
+                            <constraint firstItem="umG-be-Prb" firstAttribute="leading" secondItem="jbg-Lv-bAV" secondAttribute="leading" constant="27" id="oWY-OC-2ON"/>
+                            <constraint firstItem="NkI-WK-nGy" firstAttribute="top" secondItem="Avj-9i-uXh" secondAttribute="bottom" id="qcC-2R-S7L"/>
+                            <constraint firstItem="jbg-Lv-bAV" firstAttribute="trailing" secondItem="moM-rv-hpl" secondAttribute="trailing" constant="68" id="s9n-Pg-pal"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jbg-Lv-bAV"/>
                     </view>
@@ -419,26 +417,92 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuG-Cg-iQe" customClass="GMSMapView">
-                                <rect key="frame" x="16" y="56" width="343" height="302"/>
+                                <rect key="frame" x="16" y="56" width="343" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="REa-N1-SAF"/>
-                                    <constraint firstAttribute="height" constant="302" id="zjN-lN-aGz"/>
+                                    <constraint firstAttribute="height" constant="483" id="sRr-zU-aoY"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival Time at Home: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMk-Jo-LiU">
+                                <rect key="frame" x="16" y="597" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAb-ky-Whl">
+                                <rect key="frame" x="16" y="626" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure Time from Work: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnK-v2-89Z">
+                                <rect key="frame" x="16" y="568" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJy-NX-Xa2">
+                                <rect key="frame" x="317" y="568" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFs-v5-EAB">
+                                <rect key="frame" x="317" y="597" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipw-ni-6Vn">
+                                <rect key="frame" x="317" y="626" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nqw-Lb-RmR" firstAttribute="bottom" secondItem="fAb-ky-Whl" secondAttribute="bottom" constant="20" id="26N-Rh-fJl"/>
+                            <constraint firstItem="XnK-v2-89Z" firstAttribute="top" secondItem="fuG-Cg-iQe" secondAttribute="bottom" constant="29" id="2HX-tT-B5w"/>
+                            <constraint firstItem="fAb-ky-Whl" firstAttribute="leading" secondItem="nqw-Lb-RmR" secondAttribute="leading" constant="16" id="3QI-xW-zm5"/>
+                            <constraint firstItem="tMk-Jo-LiU" firstAttribute="leading" secondItem="nqw-Lb-RmR" secondAttribute="leading" constant="16" id="6pG-4h-JwM"/>
+                            <constraint firstItem="nqw-Lb-RmR" firstAttribute="trailing" secondItem="ipw-ni-6Vn" secondAttribute="trailing" constant="16" id="BXz-kb-f1n"/>
+                            <constraint firstItem="TJy-NX-Xa2" firstAttribute="top" secondItem="fuG-Cg-iQe" secondAttribute="bottom" constant="29" id="F8P-Ey-H6K"/>
+                            <constraint firstItem="fuG-Cg-iQe" firstAttribute="top" secondItem="VB3-QC-Uog" secondAttribute="bottom" constant="12" id="FbR-Uv-CZf"/>
+                            <constraint firstItem="fAb-ky-Whl" firstAttribute="top" secondItem="tMk-Jo-LiU" secondAttribute="bottom" constant="8" id="Fps-Uz-jMA"/>
+                            <constraint firstItem="nqw-Lb-RmR" firstAttribute="trailing" secondItem="TJy-NX-Xa2" secondAttribute="trailing" constant="16" id="G5w-y1-hYb"/>
+                            <constraint firstItem="NFs-v5-EAB" firstAttribute="top" secondItem="TJy-NX-Xa2" secondAttribute="bottom" constant="8" id="Giv-76-ZRP"/>
+                            <constraint firstItem="NFs-v5-EAB" firstAttribute="top" secondItem="TJy-NX-Xa2" secondAttribute="bottom" constant="8" id="IMO-fb-RFJ"/>
+                            <constraint firstItem="nqw-Lb-RmR" firstAttribute="trailing" secondItem="NFs-v5-EAB" secondAttribute="trailing" constant="16" id="J7B-PR-hOC"/>
+                            <constraint firstItem="ipw-ni-6Vn" firstAttribute="top" secondItem="NFs-v5-EAB" secondAttribute="bottom" constant="8" id="Jp0-TQ-7cM"/>
+                            <constraint firstItem="NFs-v5-EAB" firstAttribute="centerY" secondItem="tMk-Jo-LiU" secondAttribute="centerY" id="Ne5-Tt-JSa"/>
                             <constraint firstItem="VB3-QC-Uog" firstAttribute="top" secondItem="gOq-pD-c92" secondAttribute="top" id="R6W-LM-qum"/>
                             <constraint firstItem="fuG-Cg-iQe" firstAttribute="top" secondItem="VB3-QC-Uog" secondAttribute="bottom" constant="12" id="Ta1-J9-mjG"/>
+                            <constraint firstItem="tMk-Jo-LiU" firstAttribute="top" secondItem="XnK-v2-89Z" secondAttribute="bottom" constant="8" id="U2c-Et-y4h"/>
+                            <constraint firstItem="nqw-Lb-RmR" firstAttribute="bottom" secondItem="ipw-ni-6Vn" secondAttribute="bottom" constant="20" id="Xbz-yf-7gM"/>
                             <constraint firstItem="fuG-Cg-iQe" firstAttribute="leading" secondItem="nqw-Lb-RmR" secondAttribute="leading" constant="16" id="awE-Ai-nHD"/>
+                            <constraint firstItem="nqw-Lb-RmR" firstAttribute="trailing" secondItem="fuG-Cg-iQe" secondAttribute="trailing" constant="16" id="eal-Nc-0AK"/>
+                            <constraint firstItem="tMk-Jo-LiU" firstAttribute="top" secondItem="XnK-v2-89Z" secondAttribute="bottom" constant="8" id="epI-Og-11z"/>
+                            <constraint firstItem="ipw-ni-6Vn" firstAttribute="centerY" secondItem="fAb-ky-Whl" secondAttribute="centerY" id="fDT-Fs-NBS"/>
+                            <constraint firstItem="XnK-v2-89Z" firstAttribute="leading" secondItem="nqw-Lb-RmR" secondAttribute="leading" constant="16" id="gYe-NC-fbZ"/>
                             <constraint firstItem="nqw-Lb-RmR" firstAttribute="trailing" secondItem="fuG-Cg-iQe" secondAttribute="trailing" constant="16" id="lcr-sn-GX1"/>
+                            <constraint firstItem="fuG-Cg-iQe" firstAttribute="leading" secondItem="nqw-Lb-RmR" secondAttribute="leading" constant="16" id="nOh-4a-hlB"/>
+                            <constraint firstItem="fAb-ky-Whl" firstAttribute="top" secondItem="tMk-Jo-LiU" secondAttribute="bottom" constant="8" id="qGu-AU-gL2"/>
                             <constraint firstItem="VB3-QC-Uog" firstAttribute="trailing" secondItem="nqw-Lb-RmR" secondAttribute="trailing" id="qbg-qk-LCO"/>
+                            <constraint firstItem="ipw-ni-6Vn" firstAttribute="top" secondItem="NFs-v5-EAB" secondAttribute="bottom" constant="8" id="rOV-57-fVI"/>
+                            <constraint firstItem="TJy-NX-Xa2" firstAttribute="centerY" secondItem="XnK-v2-89Z" secondAttribute="centerY" id="tTg-rv-Ff9"/>
                             <constraint firstItem="VB3-QC-Uog" firstAttribute="leading" secondItem="nqw-Lb-RmR" secondAttribute="leading" id="zae-g7-eVd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nqw-Lb-RmR"/>
                     </view>
                     <connections>
+                        <outlet property="arrivalLabel" destination="tMk-Jo-LiU" id="t5t-kB-RLq"/>
+                        <outlet property="arrivalTimeLabel" destination="TJy-NX-Xa2" id="t6e-IC-P14"/>
+                        <outlet property="departureLabel" destination="XnK-v2-89Z" id="40M-AM-w3H"/>
+                        <outlet property="departureTimeLabel" destination="NFs-v5-EAB" id="5fY-xk-nBi"/>
+                        <outlet property="durationLabel" destination="fAb-ky-Whl" id="qxa-Qj-jGX"/>
+                        <outlet property="durationTimeLabel" destination="ipw-ni-6Vn" id="Vm4-Vq-YoQ"/>
                         <outlet property="mapView" destination="fuG-Cg-iQe" id="kyh-bv-lT3"/>
                     </connections>
                 </viewController>
