@@ -18,9 +18,7 @@ class TimeSelectorView: UIViewController {
     
     @IBAction func saveButtonPressed(_ sender: Any) {        
         propertyKey.userDefaults.set(self.homeAddressOutlet.text!, forKey: "homeAddress")
-            print(homeAddressOutlet.text)
         propertyKey.userDefaults.set(self.workAddressOutlet.text!, forKey: "workAddress")
-            print(workAddressOutlet.text)
         propertyKey.userDefaults.set(Int(self.timeToLeaveWork.date.timeIntervalSince1970), forKey: "workTimePicker")
         propertyKey.userDefaults.set(Int(self.timeToLeaveHome.date.timeIntervalSince1970), forKey: "homeTimePicker")
     }

@@ -141,11 +141,10 @@
 			children = (
 				E92D06B42063042900AA0C51 /* AppDelegate.swift */,
 				E92D06B62063042900AA0C51 /* ViewController.swift */,
-				FCA88B7021211FA3003067A0 /* FirstLaunch.swift */,
-				FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */,
+				FC2FFA8E2172292F0034B563 /* Onboarding */,
 				E92D06B82063042900AA0C51 /* Main.storyboard */,
+				FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */,
 				E90423DD20790D3D002C1500 /* TimeSelectorView.swift */,
-				FCA88B722121252D003067A0 /* FirstStartupPageView.swift */,
 				FC2E58C82099FCC500B12852 /* ResultScreen.swift */,
 				FCE41C602099FFB9001ABB28 /* UserInfo.swift */,
 				FCE41C62209A2432001ABB28 /* API.swift */,
@@ -172,6 +171,15 @@
 				E92D06D92063042A00AA0C51 /* Info.plist */,
 			);
 			path = GottaGoUITests;
+			sourceTree = "<group>";
+		};
+		FC2FFA8E2172292F0034B563 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FCA88B722121252D003067A0 /* FirstStartupPageView.swift */,
+				FCA88B7021211FA3003067A0 /* FirstLaunch.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

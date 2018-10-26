@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func gottaGoButton(_ sender: Any) {
         let newAPI = API()
-        print(newAPI.makeURL())
+        newAPI.makeURL()
     }
     
     override func viewDidLoad() {

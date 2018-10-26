@@ -41,22 +41,22 @@ class ResultScreen: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 48.857165, longitude: 2.354613, zoom: 8.0)
-        mapView.camera = camera
-        
-        let departTime = propertyKey.userDefaults.string(forKey: "defaultDepartureTime")
-        let arriveTime = propertyKey.userDefaults.string(forKey: "defaultArrivalTime")
-        let duration = propertyKey.userDefaults.string(forKey: "defaultDuration")
-        
-        durationTimeLabel.text = duration
-        arrivalTimeLabel.text = arriveTime
-        departureTimeLabel.text = departTime
+        durationTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDepartureTime")
+        arrivalTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultArrivalTime")
+        departureTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDuration")
         
         durationTimeLabel.isHidden = false
         arrivalTimeLabel.isHidden = false
         departureTimeLabel.isHidden = false
+        
+        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 43.6532, longitude: -79.3832, zoom: 8)
+        mapView.camera = camera
+        
+        let path = GMSPath(fromEncodedPath: propertyKey.userDefaults.string(forKey: "defaultPolyline")!)
+        let polyline = GMSPolyline(path: path)
+        polyline.strokeWidth = 3.0
+        polyline.strokeColor = UIColor.red
+        polyline.map = mapView
     }
     
     override func didReceiveMemoryWarning() {

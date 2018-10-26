@@ -17,7 +17,5 @@ struct propertyKey {
     static var savedWorkAddress: String = ""
     static var timeToGetToWork: Int = 0
     static var timeToLeaveHome: Int = 0
-    
-    
 }
 

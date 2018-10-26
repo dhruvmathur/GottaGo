@@ -12,16 +12,16 @@ import Alamofire
 class API{
     
     static let baseURL = "https://maps.googleapis.com/maps/api/directions/json?"
-    static var origin = "origin=\(propertyKey.userDefaults.string(forKey: "homeAddress")!)"
-    static var destination = "destination=\(propertyKey.userDefaults.string(forKey: "workAddress")!)"
+    var origin = "origin=\(propertyKey.userDefaults.string(forKey: "homeAddress")!)"
+    var destination = "destination=\(propertyKey.userDefaults.string(forKey: "workAddress")!)"
     static var mode = "mode=transit"
     static var key = "key=AIzaSyB5DcPrOlDnsunE9Y7l-8o_61WA4BhFp1Q"
     //var departure_time = "departure_time=\()"
     static var arrival_time = "arrival_time=\(propertyKey.userDefaults.integer(forKey: "workTimePicker"))"
     
     func makeURL(){
-        let  originformatted = API.origin.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
-        let  destinationformatted = API.destination.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
+        let  originformatted = origin.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
+        let  destinationformatted = destination.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
         let parameters = "\(originformatted)&\(destinationformatted)&\(API.mode)&\(API.arrival_time)&\(API.key)"
         let finalURLInString = API.baseURL + parameters
         print(finalURLInString)
@@ -72,6 +72,6 @@ class API{
                 print(overviewPolyline)
             }
         }
-        
+
     }
 }
