@@ -16,9 +16,17 @@
 		E92D06BF2063042900AA0C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92D06BE2063042900AA0C51 /* Assets.xcassets */; };
 		E92D06CD2063042900AA0C51 /* GottaGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06CC2063042900AA0C51 /* GottaGoTests.swift */; };
 		E92D06D82063042900AA0C51 /* GottaGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06D72063042900AA0C51 /* GottaGoUITests.swift */; };
+		FC14E9B32209FDA200EF975C /* StartAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC14E9B22209FDA200EF975C /* StartAddressModel.swift */; };
 		FC2E58C92099FCC500B12852 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E58C82099FCC500B12852 /* ResultScreen.swift */; };
 		FCA88B7121211FA3003067A0 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B7021211FA3003067A0 /* FirstLaunch.swift */; };
 		FCA88B732121252D003067A0 /* FirstStartupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B722121252D003067A0 /* FirstStartupPageView.swift */; };
+		FCAD8BC62207FC0A001CF682 /* ArrivalTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BC52207FC0A001CF682 /* ArrivalTimeModel.swift */; };
+		FCAD8BC82207FC8C001CF682 /* DepartureTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BC72207FC8C001CF682 /* DepartureTimeModel.swift */; };
+		FCAD8BCB2207FCF4001CF682 /* DurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BCA2207FCF4001CF682 /* DurationModel.swift */; };
+		FCAD8BCD2207FE24001CF682 /* OverPolylineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BCC2207FE24001CF682 /* OverPolylineModel.swift */; };
+		FCAD8BCF22088325001CF682 /* DataWrapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BCE22088325001CF682 /* DataWrapperModel.swift */; };
+		FCAD8BD322088578001CF682 /* RoutesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BD222088578001CF682 /* RoutesModel.swift */; };
+		FCAD8BD522088A59001CF682 /* LegsWrapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD8BD422088A59001CF682 /* LegsWrapperModel.swift */; };
 		FCD68F712133B53C001916A5 /* IntroPageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */; };
 		FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C602099FFB9001ABB28 /* UserInfo.swift */; };
 		FCE41C63209A2432001ABB28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41C62209A2432001ABB28 /* API.swift */; };
@@ -61,9 +69,17 @@
 		E92D06D32063042900AA0C51 /* GottaGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GottaGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92D06D72063042900AA0C51 /* GottaGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottaGoUITests.swift; sourceTree = "<group>"; };
 		E92D06D92063042A00AA0C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC14E9B22209FDA200EF975C /* StartAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAddressModel.swift; sourceTree = "<group>"; };
 		FC2E58C82099FCC500B12852 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		FCA88B7021211FA3003067A0 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
 		FCA88B722121252D003067A0 /* FirstStartupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStartupPageView.swift; sourceTree = "<group>"; };
+		FCAD8BC52207FC0A001CF682 /* ArrivalTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimeModel.swift; sourceTree = "<group>"; };
+		FCAD8BC72207FC8C001CF682 /* DepartureTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureTimeModel.swift; sourceTree = "<group>"; };
+		FCAD8BCA2207FCF4001CF682 /* DurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationModel.swift; sourceTree = "<group>"; };
+		FCAD8BCC2207FE24001CF682 /* OverPolylineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverPolylineModel.swift; sourceTree = "<group>"; };
+		FCAD8BCE22088325001CF682 /* DataWrapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWrapperModel.swift; sourceTree = "<group>"; };
+		FCAD8BD222088578001CF682 /* RoutesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesModel.swift; sourceTree = "<group>"; };
+		FCAD8BD422088A59001CF682 /* LegsWrapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegsWrapperModel.swift; sourceTree = "<group>"; };
 		FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageSettingsView.swift; sourceTree = "<group>"; };
 		FCE41C602099FFB9001ABB28 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FCE41C62209A2432001ABB28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -140,14 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				E92D06B42063042900AA0C51 /* AppDelegate.swift */,
-				E92D06B62063042900AA0C51 /* ViewController.swift */,
 				FC2FFA8E2172292F0034B563 /* Onboarding */,
 				E92D06B82063042900AA0C51 /* Main.storyboard */,
-				FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */,
-				E90423DD20790D3D002C1500 /* TimeSelectorView.swift */,
-				FC2E58C82099FCC500B12852 /* ResultScreen.swift */,
-				FCE41C602099FFB9001ABB28 /* UserInfo.swift */,
-				FCE41C62209A2432001ABB28 /* API.swift */,
+				FCAD8BC92207FCAA001CF682 /* TimingModels */,
+				FC14E9B02209F1B400EF975C /* View */,
+				FC14E9B12209F1C900EF975C /* Network */,
 				E92D06BE2063042900AA0C51 /* Assets.xcassets */,
 				E92D06C32063042900AA0C51 /* Info.plist */,
 				E92D06BB2063042900AA0C51 /* GottaGo.xcdatamodeld */,
@@ -173,6 +186,26 @@
 			path = GottaGoUITests;
 			sourceTree = "<group>";
 		};
+		FC14E9B02209F1B400EF975C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E92D06B62063042900AA0C51 /* ViewController.swift */,
+				FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */,
+				E90423DD20790D3D002C1500 /* TimeSelectorView.swift */,
+				FC2E58C82099FCC500B12852 /* ResultScreen.swift */,
+				FCE41C602099FFB9001ABB28 /* UserInfo.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC14E9B12209F1C900EF975C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41C62209A2432001ABB28 /* API.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		FC2FFA8E2172292F0034B563 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +213,21 @@
 				FCA88B7021211FA3003067A0 /* FirstLaunch.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FCAD8BC92207FCAA001CF682 /* TimingModels */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD8BC52207FC0A001CF682 /* ArrivalTimeModel.swift */,
+				FC14E9B22209FDA200EF975C /* StartAddressModel.swift */,
+				FCAD8BC72207FC8C001CF682 /* DepartureTimeModel.swift */,
+				FCAD8BCA2207FCF4001CF682 /* DurationModel.swift */,
+				FCAD8BCC2207FE24001CF682 /* OverPolylineModel.swift */,
+				FCAD8BCE22088325001CF682 /* DataWrapperModel.swift */,
+				FCAD8BD222088578001CF682 /* RoutesModel.swift */,
+				FCAD8BD422088A59001CF682 /* LegsWrapperModel.swift */,
+			);
+			path = TimingModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,16 +425,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAD8BD522088A59001CF682 /* LegsWrapperModel.swift in Sources */,
 				E90423DE20790D3D002C1500 /* TimeSelectorView.swift in Sources */,
 				FC2E58C92099FCC500B12852 /* ResultScreen.swift in Sources */,
+				FCAD8BC62207FC0A001CF682 /* ArrivalTimeModel.swift in Sources */,
+				FCAD8BC82207FC8C001CF682 /* DepartureTimeModel.swift in Sources */,
 				E92D06B72063042900AA0C51 /* ViewController.swift in Sources */,
 				E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */,
 				FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */,
+				FCAD8BCD2207FE24001CF682 /* OverPolylineModel.swift in Sources */,
 				E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */,
+				FCAD8BD322088578001CF682 /* RoutesModel.swift in Sources */,
 				FCA88B732121252D003067A0 /* FirstStartupPageView.swift in Sources */,
 				FCD68F712133B53C001916A5 /* IntroPageSettingsView.swift in Sources */,
 				FCE41C63209A2432001ABB28 /* API.swift in Sources */,
+				FCAD8BCF22088325001CF682 /* DataWrapperModel.swift in Sources */,
 				FCA88B7121211FA3003067A0 /* FirstLaunch.swift in Sources */,
+				FCAD8BCB2207FCF4001CF682 /* DurationModel.swift in Sources */,
+				FC14E9B32209FDA200EF975C /* StartAddressModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,11 +604,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-4";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VRDPLB4A7;
 				INFOPLIST_FILE = GottaGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -564,11 +623,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-4";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VRDPLB4A7;
 				INFOPLIST_FILE = GottaGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.GottaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

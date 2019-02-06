@@ -14,7 +14,6 @@ class TimeSelectorView: UIViewController {
     @IBOutlet weak var workAddressOutlet: UITextField!
     @IBOutlet weak var timeToLeaveWork: UIDatePicker!
     @IBOutlet weak var timeToLeaveHome: UIDatePicker!
-
     
     @IBAction func saveButtonPressed(_ sender: Any) {        
         propertyKey.userDefaults.set(self.homeAddressOutlet.text!, forKey: "homeAddress")

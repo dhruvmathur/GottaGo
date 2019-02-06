@@ -10,6 +10,9 @@ import UIKit
 import GoogleMaps
 
 class ResultScreen: UIViewController{
+    
+    static var navigationResult: LegsWrapperModel = LegsWrapperModel(json: [:])
+    static var goingToWork: Bool = true
 
     @IBOutlet weak var departureLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
@@ -41,15 +44,23 @@ class ResultScreen: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        durationTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDepartureTime")
-        arrivalTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultArrivalTime")
-        departureTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDuration")
+        departureTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultArrivalTime")
+        arrivalTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDepartureTime")
+        durationTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDuration")
+        
+        if ResultScreen.goingToWork {
+            departureLabel.text = "Departure time from Work"
+            arrivalLabel.text = "Arrival time at Home"
+        } else {
+            departureLabel.text = "Departure time from Home"
+            arrivalLabel.text = "Arrival time at Work"
+        }
         
         durationTimeLabel.isHidden = false
         arrivalTimeLabel.isHidden = false
         departureTimeLabel.isHidden = false
         
-        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 43.6532, longitude: -79.3832, zoom: 8)
+        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: propertyKey.userDefaults.double(forKey: "defaultStartLat")+0.8, longitude: propertyKey.userDefaults.double(forKey: "defaultStartLng")-1, zoom: 8)
         mapView.camera = camera
         
         let path = GMSPath(fromEncodedPath: propertyKey.userDefaults.string(forKey: "defaultPolyline")!)
@@ -57,6 +68,8 @@ class ResultScreen: UIViewController{
         polyline.strokeWidth = 3.0
         polyline.strokeColor = UIColor.red
         polyline.map = mapView
+
+        
     }
     
     override func didReceiveMemoryWarning() {

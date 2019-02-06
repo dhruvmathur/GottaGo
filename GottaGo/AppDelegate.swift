@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         storyboard.instantiateViewController(withIdentifier: "PageController")
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        print(UIScreen.main.bounds)
         var vc : AnyObject!
 
 

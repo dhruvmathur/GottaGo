@@ -10,7 +10,7 @@ import Foundation
 
 
 
-struct propertyKey {
+class propertyKey {
     static let userDefaults: UserDefaults = .standard
     
     static var savedHomeAddress: String = ""
