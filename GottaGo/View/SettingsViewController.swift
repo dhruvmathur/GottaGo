@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TimeSelectorView: UIViewController {
+class TimeSelectorViewController: UIViewController {
     
     @IBOutlet weak var homeAddressOutlet: UITextField!
     @IBOutlet weak var workAddressOutlet: UITextField!

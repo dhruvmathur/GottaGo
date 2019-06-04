@@ -6,7 +6,7 @@ target 'GottaGo' do
     pod 'Alamofire', '~> 4.7'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
+    pod 'PureLayout'
     pod 'RxSwift'
-    pod 'RxCocoa'
 
 end

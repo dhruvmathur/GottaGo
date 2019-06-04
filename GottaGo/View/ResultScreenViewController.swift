@@ -1,5 +1,5 @@
 //
-//  ResultScreen.swift
+//  ResultScreenViewController.swift
 //  GottaGo
 //
 //  Created by Dhruv Mathur on 2018-05-02.
@@ -8,8 +8,9 @@
 
 import UIKit
 import GoogleMaps
+import PureLayout
 
-class ResultScreen: UIViewController{
+class ResultScreenViewController: UIViewController{
     
     static var navigationResult: LegsWrapperModel = LegsWrapperModel(json: [:])
     static var goingToWork: Bool = true
@@ -24,7 +25,8 @@ class ResultScreen: UIViewController{
     
     @IBOutlet weak var mapView: GMSMapView!
     
-//    override func loadView() {
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    //    override func loadView() {
 //        // Create a GMSCameraPosition that tells the map to display the
 //        // coordinate -33.86,151.20 at zoom level 6.
 //        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
@@ -48,7 +50,7 @@ class ResultScreen: UIViewController{
         arrivalTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDepartureTime")
         durationTimeLabel.text = propertyKey.userDefaults.string(forKey: "defaultDuration")
         
-        if ResultScreen.goingToWork {
+        if ResultScreenViewController.goingToWork {
             departureLabel.text = "Departure time from Work"
             arrivalLabel.text = "Arrival time at Home"
         } else {
@@ -77,6 +79,27 @@ class ResultScreen: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
+}
+
+extension ResultScreenViewController: UINavigationBarDelegate, UIBarPositioningDelegate {
+    
+    func configureNavigationBar() {
+        if #available(iOS 11.0, *) {
+            navigationBar.topAnchor.constraint(
+                equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        } else {
+            navigationBar.topAnchor.constraint(
+                equalTo: topLayoutGuide.bottomAnchor).isActive = true
+        }
+        navigationBar.autoPinEdge(toSuperviewEdge: .left)
+        navigationBar.autoPinEdge(toSuperviewEdge: .right)
+        navigationBar.delegate = self
+
+    }
+    
+    public func position(for bar: UIBarPositioning) -> UIBarPosition {
+        return .topAttached
+    }
 }
 
 

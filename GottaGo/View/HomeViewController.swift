@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     let googleAPI = API()
     
@@ -17,10 +17,9 @@ class ViewController: UIViewController {
 
     @IBAction func gottaGoButton(_ sender: Any) {
         activityIndicator.isHidden = false
-        ResultScreen.goingToWork = goingToWorkSwitch.isOn
+        ResultScreenViewController.goingToWork = goingToWorkSwitch.isOn
         let apiResult = googleAPI.getNavigation(goingToWork: goingToWorkSwitch.isOn)
-        ResultScreen.navigationResult = apiResult
-        
+        ResultScreenViewController.navigationResult = apiResult
     }
     
     override func viewDidLoad() {
