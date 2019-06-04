@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		17C9C75022A5E79900474D86 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C9C74F22A5E79900474D86 /* HomeScreen.storyboard */; };
 		17C9C75222A5F11800474D86 /* SettingsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C9C75122A5F11800474D86 /* SettingsView.storyboard */; };
+		17C9C75422A60C5B00474D86 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 17C9C75322A60C5B00474D86 /* style.json */; };
+		17C9C75722A60DD300474D86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9C75622A60DD300474D86 /* Extensions.swift */; };
 		92D4D228E18FDBD0E78AEED1 /* Pods_GottaGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490171E782B977066A259495 /* Pods_GottaGo.framework */; };
 		E90423DE20790D3D002C1500 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90423DD20790D3D002C1500 /* SettingsViewController.swift */; };
 		E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D06B42063042900AA0C51 /* AppDelegate.swift */; };
@@ -55,6 +57,8 @@
 		17B0B6F522A465F600E85AEE /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = SOURCE_ROOT; };
 		17C9C74F22A5E79900474D86 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = HomeScreen.storyboard; path = View/HomeScreen.storyboard; sourceTree = "<group>"; };
 		17C9C75122A5F11800474D86 /* SettingsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsView.storyboard; sourceTree = "<group>"; };
+		17C9C75322A60C5B00474D86 /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		17C9C75622A60DD300474D86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1B0E0FAFA309D6553AEBD473 /* Pods-GottaGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GottaGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GottaGo/Pods-GottaGo.debug.xcconfig"; sourceTree = "<group>"; };
 		34EEF8F6D4939491B08DEDF8 /* Pods-GottaGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GottaGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GottaGo/Pods-GottaGo.release.xcconfig"; sourceTree = "<group>"; };
 		4524A245AC0BB61E19E85C7B /* Pods_GottaGoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GottaGoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +120,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17C9C75522A60DC000474D86 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				17C9C75622A60DD300474D86 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		1C14D05522F80576542E8395 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +179,7 @@
 				17C9C74F22A5E79900474D86 /* HomeScreen.storyboard */,
 				17C9C75122A5F11800474D86 /* SettingsView.storyboard */,
 				FCAD8BC92207FCAA001CF682 /* TimingModels */,
+				17C9C75522A60DC000474D86 /* Utilities */,
 				FC14E9B02209F1B400EF975C /* View */,
 				FC14E9B12209F1C900EF975C /* Network */,
 				E92D06BE2063042900AA0C51 /* Assets.xcassets */,
@@ -198,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				E92D06B62063042900AA0C51 /* HomeViewController.swift */,
+				17C9C75322A60C5B00474D86 /* style.json */,
 				FCD68F702133B53C001916A5 /* IntroPageSettingsView.swift */,
 				E90423DD20790D3D002C1500 /* SettingsViewController.swift */,
 				FC2E58C82099FCC500B12852 /* ResultScreenViewController.swift */,
@@ -351,6 +365,7 @@
 				17C9C75022A5E79900474D86 /* HomeScreen.storyboard in Resources */,
 				E92D06BF2063042900AA0C51 /* Assets.xcassets in Resources */,
 				17C9C75222A5F11800474D86 /* SettingsView.storyboard in Resources */,
+				17C9C75422A60C5B00474D86 /* style.json in Resources */,
 				E92D06BA2063042900AA0C51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +461,7 @@
 				FCAD8BC82207FC8C001CF682 /* DepartureTimeModel.swift in Sources */,
 				E92D06B72063042900AA0C51 /* HomeViewController.swift in Sources */,
 				E92D06B52063042900AA0C51 /* AppDelegate.swift in Sources */,
+				17C9C75722A60DD300474D86 /* Extensions.swift in Sources */,
 				FCE41C612099FFB9001ABB28 /* UserInfo.swift in Sources */,
 				FCAD8BCD2207FE24001CF682 /* OverPolylineModel.swift in Sources */,
 				E92D06BD2063042900AA0C51 /* GottaGo.xcdatamodeld in Sources */,
