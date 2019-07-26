@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (4.7.2)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
@@ -7,31 +6,20 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
-  - PureLayout (3.1.4)
-  - RxSwift (5.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.7)
   - GoogleMaps
   - GooglePlaces
-  - PureLayout
-  - RxSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
     - GoogleMaps
     - GooglePlaces
-    - PureLayout
-    - RxSwift
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
-  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 9f0a3644d0b260ecec118a480b11740fe7f9f994
+PODFILE CHECKSUM: cab96733e48743cd31dc5c4b50e103127c4b6a7c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sm4-ld-32x">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,20 +10,120 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SettingsViewController-->
         <scene sceneID="cOE-Zx-gBD">
             <objects>
-                <viewController id="Sm4-ld-32x" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" title="SettingsViewController" id="Sm4-ld-32x" customClass="SettingsViewController" customModule="GottaGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i7W-i1-fHn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wg5-Wu-yBD">
+                                <rect key="frame" x="50" y="93" width="314" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Work Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwM-6W-eye">
+                                <rect key="frame" x="50" y="133" width="314" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lR-dG-Y6v">
+                                <rect key="frame" x="47" y="246" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="581342400.24869502">
+                                    <!--2019-06-04 12:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkv-f6-IyD">
+                                <rect key="frame" x="47" y="531" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="581374800.82575202">
+                                    <!--2019-06-04 21:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hag-Qt-s3P">
+                                <rect key="frame" x="80" y="788" width="254" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUl-SE-8vc">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="34"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="Sm4-ld-32x" eventType="touchUpInside" id="9k4-U1-MIc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgu-M8-b2t">
+                                        <rect key="frame" x="128" y="0.0" width="126" height="34"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="JVz-hx-I3m" eventType="touchUpInside" id="K98-33-Ib4"/>
+                                            <action selector="cancelPressed:" destination="Sm4-ld-32x" eventType="touchUpInside" id="uNd-f7-1W1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired arrival time at work:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYl-zR-rmN">
+                                <rect key="frame" x="47" y="202" width="213" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired arrival time at home:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hb-fR-K2Q">
+                                <rect key="frame" x="47" y="487" width="219" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.4991469979" blue="0.001404395094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hag-Qt-s3P" firstAttribute="leading" secondItem="5nj-AF-iTP" secondAttribute="leading" constant="80" id="3rh-zf-YOD"/>
+                            <constraint firstItem="Wg5-Wu-yBD" firstAttribute="top" secondItem="5nj-AF-iTP" secondAttribute="top" constant="49" id="8DJ-pV-H2X"/>
+                            <constraint firstItem="hwM-6W-eye" firstAttribute="centerX" secondItem="i7W-i1-fHn" secondAttribute="centerX" id="FT5-G1-f2T"/>
+                            <constraint firstItem="6Hb-fR-K2Q" firstAttribute="leading" secondItem="5nj-AF-iTP" secondAttribute="leading" constant="47" id="Hc7-gx-ZJG"/>
+                            <constraint firstItem="hag-Qt-s3P" firstAttribute="top" secondItem="Tkv-f6-IyD" secondAttribute="bottom" constant="41" id="IAO-rT-hMU"/>
+                            <constraint firstItem="5nj-AF-iTP" firstAttribute="trailing" secondItem="hag-Qt-s3P" secondAttribute="trailing" constant="80" id="Jfc-eP-e8j"/>
+                            <constraint firstItem="Wg5-Wu-yBD" firstAttribute="leading" secondItem="5nj-AF-iTP" secondAttribute="leading" constant="50" id="JgQ-nb-Fpr"/>
+                            <constraint firstItem="rYl-zR-rmN" firstAttribute="top" secondItem="hwM-6W-eye" secondAttribute="bottom" constant="39" id="KV4-LC-rBC"/>
+                            <constraint firstItem="1lR-dG-Y6v" firstAttribute="centerX" secondItem="i7W-i1-fHn" secondAttribute="centerX" id="L1V-LG-iUG"/>
+                            <constraint firstItem="rYl-zR-rmN" firstAttribute="leading" secondItem="5nj-AF-iTP" secondAttribute="leading" constant="47" id="Mbk-Ih-4Wo"/>
+                            <constraint firstItem="5nj-AF-iTP" firstAttribute="bottom" secondItem="hag-Qt-s3P" secondAttribute="bottom" constant="40" id="Nmy-Nd-VSI"/>
+                            <constraint firstItem="Tkv-f6-IyD" firstAttribute="height" secondItem="1lR-dG-Y6v" secondAttribute="height" id="QyG-e6-raO"/>
+                            <constraint firstItem="Tkv-f6-IyD" firstAttribute="top" secondItem="6Hb-fR-K2Q" secondAttribute="bottom" constant="23.5" id="Sc8-8G-1S0"/>
+                            <constraint firstItem="5nj-AF-iTP" firstAttribute="trailing" secondItem="Wg5-Wu-yBD" secondAttribute="trailing" constant="50" id="TAG-V1-qWw"/>
+                            <constraint firstItem="1lR-dG-Y6v" firstAttribute="top" secondItem="rYl-zR-rmN" secondAttribute="bottom" constant="23.5" id="Vye-u6-DwV"/>
+                            <constraint firstItem="5nj-AF-iTP" firstAttribute="trailing" secondItem="Tkv-f6-IyD" secondAttribute="trailing" constant="47" id="WWg-1e-c8Q"/>
+                            <constraint firstItem="6Hb-fR-K2Q" firstAttribute="top" secondItem="1lR-dG-Y6v" secondAttribute="bottom" constant="25" id="Zvw-h3-UOc"/>
+                            <constraint firstItem="Tkv-f6-IyD" firstAttribute="leading" secondItem="5nj-AF-iTP" secondAttribute="leading" constant="47" id="aW1-a7-VBr"/>
+                            <constraint firstItem="5nj-AF-iTP" firstAttribute="trailing" secondItem="1lR-dG-Y6v" secondAttribute="trailing" constant="47" id="h12-Mi-36O"/>
+                            <constraint firstItem="5nj-AF-iTP" firstAttribute="trailing" secondItem="hwM-6W-eye" secondAttribute="trailing" constant="50" id="nWi-9V-lJ3"/>
+                            <constraint firstItem="hwM-6W-eye" firstAttribute="leading" secondItem="5nj-AF-iTP" secondAttribute="leading" constant="50" id="oDB-xQ-AF5"/>
+                            <constraint firstItem="hwM-6W-eye" firstAttribute="top" secondItem="Wg5-Wu-yBD" secondAttribute="bottom" constant="10" id="sOi-hh-4M0"/>
+                            <constraint firstItem="1lR-dG-Y6v" firstAttribute="leading" secondItem="5nj-AF-iTP" secondAttribute="leading" constant="47" id="u5z-sv-ucD"/>
+                            <constraint firstItem="Wg5-Wu-yBD" firstAttribute="centerX" secondItem="i7W-i1-fHn" secondAttribute="centerX" id="zvZ-Se-dGV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5nj-AF-iTP"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonStackView" destination="hag-Qt-s3P" id="he0-Ge-dKK"/>
+                        <outlet property="homeAddressOutlet" destination="Wg5-Wu-yBD" id="mbs-Sd-7Tk"/>
+                        <outlet property="timeToLeaveHome" destination="1lR-dG-Y6v" id="Ip2-mI-crX"/>
+                        <outlet property="timeToLeaveWork" destination="Tkv-f6-IyD" id="Zdf-7F-IMk"/>
+                        <outlet property="workAddressOutlet" destination="hwM-6W-eye" id="bJC-ZP-EbZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abH-RX-hLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JVz-hx-I3m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="9" y="-5"/>
+            <point key="canvasLocation" x="8.6956521739130448" y="-5.3571428571428568"/>
         </scene>
     </scenes>
 </document>

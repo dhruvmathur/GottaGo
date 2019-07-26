@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-class FirstStartUpPageView: UIPageViewController{
+class FirstStartUpPageView: UIPageViewController {
+    
+    var currentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,18 +29,23 @@ extension FirstStartUpPageView: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        if currentIndex == 0 {
+            return nil
+        }
         let titlePage = UIStoryboard(name: "Main", bundle: nil) .
             instantiateViewController(withIdentifier: "Title")
-        
+        currentIndex = 0
         return titlePage
     }
     
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        
+        if currentIndex == 1 {
+            return nil
+        }
         let settingsPage = UIStoryboard(name: "Main", bundle: nil) .
             instantiateViewController(withIdentifier: "Settings")
-        
+        currentIndex = 1
         return settingsPage
     }
 }

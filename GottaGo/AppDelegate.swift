@@ -18,20 +18,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyA7j7EOprxlOB35wALWVfzXbvyCg_TGIlo")
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         storyboard.instantiateViewController(withIdentifier: "PageController")
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        var vc : AnyObject!
-
 
         let firstLaunch = FirstLaunch()
         if firstLaunch.isFirstLaunch {
-            vc = storyboard.instantiateViewController(withIdentifier: "PageController")
-        }else{
-            vc = storyboard.instantiateViewController(withIdentifier: "MainView")
+            let vc = storyboard.instantiateViewController(withIdentifier: "PageController")
+            self.window!.rootViewController = vc as UIViewController
+            self.window!.makeKeyAndVisible()
+        } else {
+            window = UIWindow(frame: UIScreen.main.bounds)
+            let mainController = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateViewController(withIdentifier: "MainView") as! HomeViewController
+            let navigationController = UINavigationController(rootViewController: mainController)
+            navigationController.setNavigationBarHidden(true, animated: true)
+            self.window?.rootViewController = navigationController
+            self.window?.makeKeyAndVisible()
         }
-        self.window!.rootViewController = vc as? UIViewController
-        self.window!.makeKeyAndVisible()
         return true
     }
     

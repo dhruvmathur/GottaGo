@@ -10,8 +10,11 @@ import Foundation
 
 class LegsWrapperModel: Decodable {
     let routes: [RoutesModel]
+    let status: String
+    let error: String? = nil
     
     init(json: [String:Any]) {
         routes = json["routes"] as? [RoutesModel] ?? [RoutesModel(json: [:])]
+        status = json["status"] as? String ?? ""
     }
 }

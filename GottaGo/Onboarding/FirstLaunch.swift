@@ -19,11 +19,7 @@ final class FirstLaunch {
     
     init() {
         let key = "com.dhruv.GottaGo"
-        let wasLaunchedBefore = userDefaults.bool(forKey: key)
+        let wasLaunchedBefore = propertyKey.userDefaults.bool(forKey: key)
         self.wasLaunchedBefore = wasLaunchedBefore
-        if !wasLaunchedBefore {
-            userDefaults.set(true, forKey: key)
-        }
     }
-    
 }

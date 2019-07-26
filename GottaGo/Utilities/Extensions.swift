@@ -22,3 +22,20 @@ func getMapStyling() -> String? {
         return nil
     }
 }
+
+func getTimeFromString(called string: String) -> (Int, Int) {
+    let dateFormatter = DateFormatter()
+    let text = string.replacingOccurrences(of: ".", with: "", options: NSString.CompareOptions.literal, range: nil)
+    dateFormatter.dateFormat = "h:mma"
+    let date = dateFormatter.date(from: text)
+    
+    dateFormatter.dateFormat = "HH:mm"
+    let secondDateString = dateFormatter.string(from: date!)
+    let date2 = dateFormatter.date(from: secondDateString)
+    let calendar = Calendar.current
+    let hour = calendar.component(.hour, from: date2!)
+    let minutes = calendar.component(.minute, from: date2!)
+    return (hour, minutes)
+}
+
+
